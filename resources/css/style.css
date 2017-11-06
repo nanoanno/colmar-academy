@@ -1,0 +1,192 @@
+/* Style choices:
+	Hex Colors
+		darkest blue option 1: #273841
+		darkest blue option 2: #384F5C
+		dark blue: #3F5967
+		light blue: #4E6F81
+		lightest blue: #7C9DB1
+ 	Fonts
+	 	Nixie One
+	 	Lato: 300, 400, 700
+ */
+
+/* Base Font Styles */
+html {
+	font-size: 16px;
+	font-family: Lato;
+	font-weight: 400;
+	color: #384F5C;
+}
+
+h1 {
+	color: white;
+	font-family: "Nixie One";
+	font-size: 3em;
+	padding-bottom: 1.5rem;
+}
+
+h2 {
+	font-family: "Nixie One";
+	font-size: 2.5rem;
+	padding-top: 2rem;
+	padding-bottom: 1.5rem;
+}
+
+h3 {
+	font-weight: 300;
+	font-size: 1.75rem;
+	padding-bottom: 1.5rem;
+}
+
+p {
+	font-weight: 300;
+}
+
+a {
+	text-decoration: none;
+	color: black;	
+}
+
+/* Content styling */
+
+/* Header - Logo & Menu Nav */
+header {
+	height: 64px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	z-index: 1;
+	background-color: white;
+}
+
+.logo {
+	padding-left: 1.5em;
+	display: flex;
+	align-items: center;
+}
+
+.logo span {
+	font-size: 1.25em;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	padding-left: 0.2em;
+	color: black;
+}
+
+.logo strong {
+	font-weight: 700;
+}
+
+nav a:hover {
+	color: #4E6F81;
+	transition: color 200ms ease-in;
+}
+
+header nav {
+	padding-right: 1.5em;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+	font-weight: 400;
+}
+
+nav span {
+	padding: 1em 0.5em;
+}
+
+/* Hero Section */
+.hero {
+	padding-top: 4em;
+	background-color: #3F5967;
+	display: flex;
+	align-items: center;
+}
+
+.hero img {
+	width: 60%;
+	padding: 2rem 1.5rem;
+}
+
+.hero-copy {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	color: white;
+}
+
+.btn {
+	max-width: 100%;
+	background-color: #7C9DB1;
+	padding: 0.75rem;
+	font-size: 1.25rem;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+}
+
+.btn:hover {
+	background-color: #273841;
+	transition: background-color 200ms ease-out;
+}
+
+/* Information Panel */
+.info {
+	display: flex;
+}
+
+.info-primary img {
+	max-width: 100%;
+	
+}
+
+.info-primary {
+	width: 60%;
+	padding: 2rem 1.5rem;
+}
+
+.info-primary p {
+	line-height: 1.5rem;
+	font-size: 1.25rem;
+}
+
+.info-primary .student {
+	color: #4E6F81;
+	font-size: 1rem;
+	font-weight: 700;
+	padding-top: 1.5rem;
+}
+
+.info-secondary {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+}
+
+.info-secondary-item {
+	display: flex;
+	align-items: center;
+}
+
+.info-secondary img {
+	width: 35%;
+	height: 35%;
+	padding: 1.5rem;
+}
+
+.read-more {
+	text-transform: uppercase;
+	color: #4E6F81;
+	padding-top: 1.5rem;
+	letter-spacing: .025em;
+}
+
+.read-more:hover {
+	color: #4E6F81;
+	font-weight: 700;
+	transition: all 200ms ease-in;
+}
+
+/* Courses Panel */
+/* Thesis Panel */
+/* Footer - Copyright & Privacy Links */
