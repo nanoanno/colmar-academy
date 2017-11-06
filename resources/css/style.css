@@ -21,15 +21,14 @@ html {
 h1 {
 	color: white;
 	font-family: "Nixie One";
-	font-size: 3em;
+	font-size: 3.126em;
 	padding-bottom: 1.5rem;
 }
 
 h2 {
 	font-family: "Nixie One";
 	font-size: 2.5rem;
-	padding-top: 2rem;
-	padding-bottom: 1.5rem;
+	padding: 2rem 0 1.5rem;
 }
 
 h3 {
@@ -174,6 +173,10 @@ nav span {
 	padding: 1.5rem;
 }
 
+.info-secondary h3 {
+	font-weight: 400;
+}
+
 .read-more {
 	text-transform: uppercase;
 	color: #4E6F81;
@@ -188,5 +191,49 @@ nav span {
 }
 
 /* Courses Panel */
+
+.courses {
+	background-color: #3F5967;
+	text-align: center;
+	color: white;
+	padding-left: 4.5rem;
+	padding-right: 4.5rem;
+}
+
+.courses-row1, .courses-row2 {
+	display: flex;
+	text-align: left;
+	justify-content: center;
+}
+
+.course {
+	width: 30%;
+	margin: 1rem;
+	background-color: white;
+	color: #384F5C;
+}
+
+.course img {
+	width: 100%;
+}
+
+.course-copy {
+	margin: 1.5rem 2.5rem;
+}
+
+.course-copy h3 {
+	font-family: "Nixie One";
+}
+
+.course-copy p {
+	padding: .5rem 0;
+	font-size: 1.125rem;
+}
+
+.course-copy span {
+	font-weight: 400;
+}
+
+
 /* Thesis Panel */
 /* Footer - Copyright & Privacy Links */
