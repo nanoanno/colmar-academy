@@ -5,6 +5,7 @@
 		dark blue: #3F5967
 		light blue: #4E6F81
 		lightest blue: #7C9DB1
+		extra light: #DCE3EA; (used for hr)
  	Fonts
 	 	Nixie One
 	 	Lato: 300, 400, 700
@@ -32,7 +33,7 @@ h1 {
 h2 {
 	font-family: "Nixie One";
 	font-size: 2.5rem;
-	padding: 2rem 0 1.5rem;
+	padding: 1.5rem 0 1.5rem;
 }
 
 h3 {
@@ -161,7 +162,7 @@ nav span {
 
 .primary {
 	width: 60%;
-	padding: 2rem 1.5rem;
+	padding: 2rem 1.5rem 0;
 }
 
 .primary p {
@@ -191,8 +192,6 @@ nav span {
 	background-color: #4E6F81; 
 	color: white;
 	transition: all 400ms ease-out;
-	transform: scale(1.025);
-	box-shadow: 0 0 0.75em 0.25em rgba(0,0,0,0.2);
 }
 
 .secondary img {
@@ -222,8 +221,7 @@ nav span {
 	background-color: #3F5967;
 	text-align: center;
 	color: white;
-	padding-left: 4.5rem;
-	padding-right: 4.5rem;
+	padding: 1.5rem 4.5rem 3rem;
 }
 
 .courses-row1, .courses-row2 {
@@ -286,8 +284,22 @@ footer {
 	justify-content: space-between;
 	align-items: center;
 	padding-left: 1.5rem;
+	border-top: 0.025rem #DCE3EA solid;
+	margin-top: 2rem;
 }
 
 .footer-links {
 	padding-right: 3rem;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+	font-weight: 400;
+}
+
+.footer-links span {
+	padding: 1em 0.5em;
+}
+
+.footer-links span:hover {
+	color: #4E6F81;
+	transition: color 200ms ease-in;
 }
