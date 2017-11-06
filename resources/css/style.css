@@ -10,6 +10,10 @@
 	 	Lato: 300, 400, 700
  */
 
+
+
+
+
 /* Base Font Styles */
 html {
 	font-size: 16px;
@@ -47,6 +51,11 @@ a {
 }
 
 /* Content styling */
+
+
+
+
+
 
 /* Header - Logo & Menu Nav */
 header {
@@ -94,6 +103,12 @@ nav span {
 	padding: 1em 0.5em;
 }
 
+
+
+
+
+
+
 /* Hero Section */
 .hero {
 	padding-top: 4em;
@@ -129,66 +144,77 @@ nav span {
 	transition: background-color 200ms ease-out;
 }
 
-/* Information Panel */
-.info {
+
+
+
+
+
+
+/* Information & Thesis Panels */
+.info, .thesis {
 	display: flex;
 }
 
-.info-primary img {
+.primary img {
 	max-width: 100%;
-	
 }
 
-.info-primary {
+.primary {
 	width: 60%;
 	padding: 2rem 1.5rem;
 }
 
-.info-primary p {
+.primary p {
 	line-height: 1.5rem;
 	font-size: 1.25rem;
 }
 
-.info-primary .student {
+.primary .student {
 	color: #4E6F81;
 	font-size: 1rem;
 	font-weight: 700;
 	padding-top: 1.5rem;
 }
 
-.info-secondary {
+.secondary {
 	width: 40%;
 	display: flex;
 	flex-direction: column;
 }
 
-.info-secondary-item {
+.secondary-item {
 	display: flex;
 	align-items: center;
 }
 
-.info-secondary img {
+.secondary-item:hover {
+	background-color: #4E6F81; 
+	color: white;
+	transition: all 400ms ease-out;
+	transform: scale(1.025);
+	box-shadow: 0 0 0.75em 0.25em rgba(0,0,0,0.2);
+}
+
+.secondary img {
 	width: 35%;
 	height: 35%;
 	padding: 1.5rem;
 }
 
-.info-secondary h3 {
+.secondary h3 {
 	font-weight: 400;
 }
 
 .read-more {
 	text-transform: uppercase;
-	color: #4E6F81;
 	padding-top: 1.5rem;
 	letter-spacing: .025em;
 }
 
-.read-more:hover {
-	color: #4E6F81;
-	font-weight: 700;
-	transition: all 200ms ease-in;
-}
+
+
+
+
 
 /* Courses Panel */
 
@@ -213,6 +239,12 @@ nav span {
 	color: #384F5C;
 }
 
+.course:hover {
+	transition: all 400ms ease-out;
+	transform: scale(1.025);
+	box-shadow: 0 0 0.75em 0.25em rgba(0,0,0,0.2);
+}
+
 .course img {
 	width: 100%;
 }
@@ -235,5 +267,27 @@ nav span {
 }
 
 
+
+
+
+
 /* Thesis Panel */
+
+
+
+
+
+
 /* Footer - Copyright & Privacy Links */
+footer {
+	height: 64px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 1.5rem;
+}
+
+.footer-links {
+	padding-right: 3rem;
+}
