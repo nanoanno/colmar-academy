@@ -123,12 +123,16 @@ a {
 header {
 	height: 64px;
 	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	position: fixed;
 	z-index: 1;
 	background-color: white;
+}
+
+.desktop-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 0.75rem;
 }
 
 .logo {
@@ -165,7 +169,24 @@ nav span {
 	padding: 1em 0.5em;
 }
 
+@media only screen and (max-width:750px) {
+	.desktop-menu {
+		display: none;
+	}
+	.mobile-menu {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		padding-top: 1em;
+	}
+}
 
+@media only screen and (min-width:750px) {
+	.mobile-menu {
+		display: none;
+	}
+}
 
 
 
@@ -410,7 +431,7 @@ nav span {
 }
 
 @media only screen and (max-width:650px) {
-	.course img, .course-description, span {
+	.course img, .course-description, .course span {
 		display: none;
 	}
 	.courses-row1, .courses-row2 {
@@ -458,13 +479,12 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-left: 1.5rem;
+	padding: 0 1.5rem;
 	border-top: 0.025rem #DCE3EA solid;
 	margin-top: 2rem;
 }
 
 .footer-links {
-	padding-right: 3rem;
 	text-transform: uppercase;
 	letter-spacing: .05em;
 	font-weight: 400;
@@ -477,4 +497,10 @@ footer {
 .footer-links span:hover {
 	color: #4E6F81;
 	transition: color 200ms ease-in;
+}
+
+@media only screen and (max-width:650px) {
+	.footer-links, .copyright {
+		font-size: 0.75rem;
+	}
 }
